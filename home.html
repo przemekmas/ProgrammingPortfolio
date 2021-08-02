@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Web Portfolio - Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<nav class="navigation-bar navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#MainNavbarId"
+					aria-expanded="false">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand main-title" href="home.html">Programming Portfolio</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="MainNavbarId">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="home.html">Home</a></li>
+					<li><a href="#AboutMeContainerId">About</a></li>
+					<li><a href="#EmailMeContainerId">Contact</a></li>
+					<li><a href="#PortfolioContainerId">Portfolio</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="jumbotron information-parent-container-default">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 information-parent-image-container">
+					<img class="information-profile-image" src="images/ProfilePicture.jpg"></img>
+				</div>
+
+				<div class="col-md-8 information-detail-container">
+					<h1>Przemyslaw Maslowski</h1>
+					<h2>Software Engineer</h2>
+
+					<br>
+					<div class="information-container">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<p>przemyslawm@outlook.com</p>
+					</div>
+					<div class="information-container">
+						<i class="fa fa-phone-square" aria-hidden="true"></i>
+						<p>07380267577</p>
+					</div>
+				</div>
+
+				<div class="col-md-12 start-button-parent-container">
+					<a href="#AboutMeContainerId">
+						<button class="start-button">
+							<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="information-wave-parent-container">
+			<svg viewBox="0 0 500 150" preserveAspectRatio="none" class="information-wave-container">
+				<path d="M-0.27,37.98 C262.13,216.61 312.36,-24.17 504.79,48.84 L503.67,151.47 L0.00,150.00 Z"
+					class="information-wave-path-default"></path>
+			</svg>
+		</div>
+	</div>
+
+	<div id="AboutMeContainerId" class="jumbotron information-parent-container-primary">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 information-parent-image-container">
+					<i class="fa fa-info-circle information-icon" aria-hidden="true"></i>
+				</div>
+
+				<div class="col-md-8 information-detail-container">
+					<h1>About Me</h1>
+					<br>
+					<p>I developed an interest in building computers at an early age of 13, which was when I have
+						built my first gaming computer. I have always liked to be able to build computers by myself
+						and I keep up to date with the latest PC hardware to this day. However, I developed an
+						interest in programming after I joined university. The first programming language that I
+						learned was Java, which was my first object oriented programming language that I picked up.
+						Later throughout my university I have picked up C#. After graduating with a first class
+						degree from the University of Bedfordshire, I have secured a job as a Junior Software
+						Developer. I have worked for about 1.5 years before being promoted to an Intermediate
+						Software Developer. I have expereince with desktop based applications written in C#, WPF,
+						and WinForms. I also have expereince with writing android applications and the Xamarin
+						framework. After 4 years of developing desktop and mobile applications, I have moved on to
+						web applications and have secured a job as a Software Engineer. I have decided to move on
+						from desktop applications as I always liked to work on web applications in my spare time. I
+						have also made the decision to start working on web based applications as I believe that we
+						moving on from desktop applications to web applications as they are easier to access and
+						maintain.</p>
+				</div>
+
+				<div class="col-md-12 start-button-parent-container">
+					<a href="#EmailMeContainerId">
+						<button class="start-button">
+							<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="information-wave-parent-container">
+			<svg viewBox="0 0 500 150" preserveAspectRatio="none" class="information-wave-container">
+				<path d="M-0.27,37.98 C262.13,216.61 312.36,-24.17 504.79,48.84 L503.67,151.47 L0.00,150.00 Z"
+					class="information-wave-path-primary"></path>
+			</svg>
+		</div>
+	</div>
+
+	<div id="EmailMeContainerId" class="jumbotron information-parent-container-default">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 information-parent-image-container">
+					<i class="fa fa-envelope information-icon" aria-hidden="true"></i>
+				</div>
+
+				<div class="col-md-8 information-detail-container">
+					<div class="email-container">
+						<h1>Email Me</h1>
+						<br>
+						<span>Subject</span>
+						<input type="text" id="ContactSubjectId" placeholder="Subject..">
+
+						<span>Message</span>
+						<textarea id="ContactMessageId" placeholder="Message..."
+							class="email-message-textarea"></textarea>
+
+						<a id="ContactEmailMeLinkId" onclick="EmailMe()">
+							<button class="btn btn-default">Email Me</button>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-12 start-button-parent-container">
+					<a href="#PortfolioContainerId">
+						<button class="start-button">
+							<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="information-wave-parent-container">
+			<svg viewBox="0 0 500 150" preserveAspectRatio="none" class="information-wave-container">
+				<path d="M-0.27,37.98 C262.13,216.61 312.36,-24.17 504.79,48.84 L503.67,151.47 L0.00,150.00 Z"
+					class="information-wave-path-default"></path>
+			</svg>
+		</div>
+	</div>
+
+	<div id="PortfolioContainerId" class="container custom-content">
+		<div class="custom-card-row row">
+			<div class="col-sm-4 custom-card-column">
+				<div class="custom-card">
+					<img class="custom-card-image" src="images/HouseAffordibilityTool.JPG"></img>
+					<div class="custom-card-body">
+						<a class="custom-hyperlink" href="https://github.com/przemekmas/HouseAffordabilityTool"
+							target="_blank">
+							<h3>House Affordability Calculator</h3>
+							<p>The house affordability tool can be used to help figure out if you can afford to pay for
+								a
+								mortgage
+								and other upfront costs.</p>
+						</a>
+
+						<table class="custom-card-info-table">
+							<tr>
+								<td>
+									<i class="fa fa-github custom-card-info-icon"></i>
+								</td>
+								<td>
+									<span class="custom-card-info-span">
+										<a target="_blank"
+											href="https://github.com/przemekmas/HouseAffordabilityTool">House
+											Affordability Tool</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<i class="fa fa-code custom-card-info-icon"></i>
+								</td>
+								<td>
+									<div class="custom-card-info-span">
+										<span class="label label-primary">JavaScript</span>
+										<span class="label label-warning">HTML</span>
+										<span class="label label-info">CSS</span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 custom-card-column">
+				<div class="custom-card">
+					<img class="custom-card-image" src="images/MachineLearningSoftware.JPG"></img>
+					<div class="custom-card-body">
+						<a class="custom-hyperlink" href="https://github.com/przemekmas/MachineLearningSoftware"
+							target="_blank">
+							<h3>Machine Learning Software</h3>
+							<p>I have developed the machine learning software for my masters project at the university
+								of
+								bedfordshire.</p>
+						</a>
+
+						<table class="custom-card-info-table">
+							<tr>
+								<td>
+									<i class="fa fa-github custom-card-info-icon"></i>
+								</td>
+								<td>
+									<span class="custom-card-info-span">
+										<a target="_blank"
+											href="https://github.com/przemekmas/MachineLearningSoftware">Machine
+											Learning
+											Software</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<i class="fa fa-code custom-card-info-icon"></i>
+								</td>
+								<td>
+									<div class="custom-card-info-span">
+										<span class="label label-success">C#</span>
+										<span class="label label-default">WPF</span>
+										<span class="label label-danger">Python</span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 custom-card-column">
+				<div class="custom-card">
+					<img class="custom-card-image" src="images/SudokuSolverWPF.JPG"></img>
+					<div class="custom-card-body">
+						<a class="custom-hyperlink" href="https://github.com/przemekmas/SudokuSolverWPF"
+							target="_blank">
+							<h3>Sudoku Solver</h3>
+							<p>The sudoku solver is an application that I have developed with WPF and C#.</p>
+						</a>
+
+						<table class="custom-card-info-table">
+							<tr>
+								<td>
+									<i class="fa fa-github custom-card-info-icon"></i>
+								</td>
+								<td>
+									<span class="custom-card-info-span">
+										<a target="_blank" href="https://github.com/przemekmas/SudokuSolverWPF">Sudoku
+											Solver WPF</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<i class="fa fa-code custom-card-info-icon"></i>
+								</td>
+								<td>
+									<div class="custom-card-info-span">
+										<span class="label label-success">C#</span>
+										<span class="label label-default">WPF</span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="custom-card-row row">
+			<div class="col-sm-4 custom-card-column">
+				<div class="custom-card">
+					<img class="custom-card-image" src="images/Elevator.JPG"></img>
+					<div class="custom-card-body">
+						<a class="custom-hyperlink" href="https://github.com/przemekmas/Elevator" target="_blank">
+							<h3>Elevator</h3>
+							<p>This is an elevator project that I worked on during my second year of university. This
+								was my
+								first attempt at diving into C# code.</p>
+						</a>
+
+						<table class="custom-card-info-table">
+							<tr>
+								<td>
+									<i class="fa fa-github custom-card-info-icon"></i>
+								</td>
+								<td>
+									<span class="custom-card-info-span">
+										<a target="_blank" href="https://github.com/przemekmas/Elevator">Elevator</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<i class="fa fa-code custom-card-info-icon"></i>
+								</td>
+								<td>
+									<div class="custom-card-info-span">
+										<span class="label label-success">C#</span>
+										<span class="label label-default">WinForms</span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 custom-card-column">
+				<div class="custom-card">
+					<img class="custom-card-image" src="images/GolfWithFriendsCheats.JPG"></img>
+					<div class="custom-card-body">
+						<a class="custom-hyperlink" href="https://github.com/przemekmas/Golf-With-Friends-Cheats"
+							target="_blank">
+							<h3>Golf With Friends Cheats</h3>
+							<p>This is a hack client that I have created with C# and WPF. The user interface allows you
+								to change ingame values that are stored in memory.</p>
+						</a>
+
+						<table class="custom-card-info-table">
+							<tr>
+								<td>
+									<i class="fa fa-github custom-card-info-icon"></i>
+								</td>
+								<td>
+									<span class="custom-card-info-span">
+										<a target="_blank"
+											href="https://github.com/przemekmas/Golf-With-Friends-Cheats">Golf With
+											Friends Cheats</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<i class="fa fa-code custom-card-info-icon"></i>
+								</td>
+								<td>
+									<div class="custom-card-info-span">
+										<span class="label label-success">C#</span>
+										<span class="label label-default">WPF</span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 custom-card-column">
+				<div class="custom-card">
+					<img class="custom-card-image" src="images/FileExplorerChanges.JPG"></img>
+					<div class="custom-card-body">
+						<a class="custom-hyperlink" href="https://github.com/przemekmas/FileExplorer.Changes"
+							target="_blank">
+							<h3>File Explorer Changes</h3>
+							<p>This is a WPF C# application that lets you track changed or new files in a specified
+								directory.</p>
+						</a>
+
+						<table class="custom-card-info-table">
+							<tr>
+								<td>
+									<i class="fa fa-github custom-card-info-icon"></i>
+								</td>
+								<td>
+									<span class="custom-card-info-span">
+										<a target="_blank"
+											href="https://github.com/przemekmas/FileExplorer.Changes">File Explorer
+											Changes</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<i class="fa fa-code custom-card-info-icon"></i>
+								</td>
+								<td>
+									<div class="custom-card-info-span">
+										<span class="label label-success">C#</span>
+										<span class="label label-default">WPF</span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="custom-card-row row">
+			<div class="col-sm-4 custom-card-column">
+				<div class="custom-card">
+					<img class="custom-card-image" src="images/CSharpToPythonConverter.jpeg"></img>
+					<div class="custom-card-body">
+						<a class="custom-hyperlink" href="https://github.com/przemekmas/CSharpToPythonConverter"
+							target="_blank">
+							<h3>C# To Python Converter</h3>
+							<p>This is a simple console application that converts C# code to Python code. The
+								application works with basic C# syntax that can be converted to Python.</p>
+						</a>
+
+						<table class="custom-card-info-table">
+							<tr>
+								<td>
+									<i class="fa fa-github custom-card-info-icon"></i>
+								</td>
+								<td>
+									<span class="custom-card-info-span">
+										<a target="_blank"
+											href="https://github.com/przemekmas/CSharpToPythonConverter">C# To Python
+											Converter</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<i class="fa fa-code custom-card-info-icon"></i>
+								</td>
+								<td>
+									<div class="custom-card-info-span">
+										<span class="label label-success">C#</span>
+										<span class="label label-default">Console Application</span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 custom-card-column">
+				<div class="custom-card">
+					<img class="custom-card-image" src="images/JavaScriptToolbox.jpg"></img>
+					<div class="custom-card-body">
+						<a class="custom-hyperlink" href="https://github.com/przemekmas/JavaScript-ToolBox"
+							target="_blank">
+							<h3>JavaScript Toolbox</h3>
+							<p>This is my first attempt at using jquery and getting used to the syntax. I have created a
+								very simple application that allows you to create DOM objects that can be dragged around
+								the page.</p>
+						</a>
+
+						<table class="custom-card-info-table">
+							<tr>
+								<td>
+									<i class="fa fa-github custom-card-info-icon"></i>
+								</td>
+								<td>
+									<span class="custom-card-info-span">
+										<a target="_blank"
+											href="https://github.com/przemekmas/JavaScript-ToolBox">JavaScript
+											Toolbox</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<i class="fa fa-code custom-card-info-icon"></i>
+								</td>
+								<td>
+									<div class="custom-card-info-span">
+										<span class="label label-primary">JavaScript</span>
+										<span class="label label-primary">JQuery</span>
+										<span class="label label-info">CSS</span>
+										<span class="label label-warning">HTML</span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 footer-navigation-buttons-parent">
+					<ul class="footer-navigation-buttons">
+						<li><a href="home.html">Home</a></li>
+						<li><a href="#AboutMeContainerId">About</a></li>
+						<li><a href="#EmailMeContainerId">Contact</a></li>
+						<li><a href="#PortfolioContainerId">Portfolio</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-12">
+					<div class="footer-section-break"></div>
+				</div>
+
+				<div class="col-md-6 footer-left-container">
+					<i class="fa fa-copyright"></i>
+					<p class="footer-paragraph">2021 Przemyslaw Maslowski</p>
+				</div>
+				<div class="col-md-6 footer-right-container">
+					<p>Programming Portfolio</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
