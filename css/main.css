@@ -29,6 +29,17 @@ html {
 	height: 100%;
 }
 
+.custom-navbar-button {
+	width: 44px;
+	height: 34px;
+	padding: 0px;
+}
+
+.custom-navbar-icon {
+	font-size: 24px;
+	color: #333;
+}
+
 .main-title {
 	text-transform: uppercase;
 }

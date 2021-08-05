@@ -24,3 +24,37 @@ function EmailMe() {
 		emailMeId.setAttribute("href", "mailto:przemyslawm@outlook.com");
 	}
 }
+
+function InitNavigationBarToggle() {
+	$('#MainNavbarId').on('shown.bs.collapse', function () {
+		OnNavigationBarShow(false);
+	});
+	$('#MainNavbarId').on('show.bs.collapse', function () {
+		OnNavigationBarShow(true);
+	});
+	$('#MainNavbarId').on('hide.bs.collapse', function () {
+		OnNavigationBarHide(true);
+	});
+	$('#MainNavbarId').on('hidden.bs.collapse', function () {
+		OnNavigationBarHide(false);
+	});
+}
+
+function OnNavigationBarHide(animateOpacity) {
+	$("#NavbarMenuButtonId").html("<i class=\"fa fa-bars custom-navbar-icon\" aria-hidden=\"true\"></i>");
+	if (animateOpacity) {
+		$("i.custom-navbar-icon").css("opacity", "0");
+		$("i.custom-navbar-icon").fadeTo("fast", 1.00);
+	}
+}
+
+function OnNavigationBarShow(animateOpacity) {
+	var closeIconElement = document.createElement("i");
+	closeIconElement.setAttribute("class", "fa fa-times custom-navbar-icon");
+	closeIconElement.setAttribute("aria-hidden", "true");
+	$("#NavbarMenuButtonId").html(closeIconElement.outerHTML);
+	if (animateOpacity) {
+		$("i.custom-navbar-icon").css("opacity", "0");
+		$("i.custom-navbar-icon").fadeTo("fast", 1.00);
+	}
+}
