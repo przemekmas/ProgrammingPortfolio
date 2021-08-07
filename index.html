@@ -37,7 +37,7 @@
 
 	<div class="jumbotron information-parent-container-default">
 		<div class="container">
-			<div class="row">
+			<div id="InformationContentContainerId" class="row">
 				<div class="col-md-4 information-parent-image-container">
 					<img class="information-profile-image" src="images/ProfilePicture.jpg"></img>
 				</div>
@@ -77,7 +77,7 @@
 
 	<div id="AboutMeContainerId" class="jumbotron information-parent-container-primary">
 		<div class="container">
-			<div class="row">
+			<div id="AboutMeContentContainerId" class="row">
 				<div class="col-md-4 information-parent-image-container">
 					<i class="fa fa-info-circle information-icon" aria-hidden="true"></i>
 				</div>
@@ -123,7 +123,7 @@
 
 	<div id="EmailMeContainerId" class="jumbotron information-parent-container-default">
 		<div class="container">
-			<div class="row">
+			<div id="EmailMeContentContainerId" class="row">
 				<div class="col-md-4 information-parent-image-container">
 					<i class="fa fa-envelope information-icon" aria-hidden="true"></i>
 				</div>
@@ -528,4 +528,6 @@
 
 <script type="text/javascript">
 	InitNavigationBarToggle();
+	SetOpacityToZeroForAllAnimationElements();
+	InitAllFadeInBottomAnimations();
 </script>

@@ -58,3 +58,37 @@ function OnNavigationBarShow(animateOpacity) {
 		$("i.custom-navbar-icon").fadeTo("fast", 1.00);
 	}
 }
+
+function InitFadeInBottomAnimationForElement(elementId) {
+	var element = document.getElementById(elementId);
+
+	var elementScrollTop = element.offsetTop - element.offsetHeight;
+	var currentPosition = document.documentElement.scrollTop;
+
+	if (currentPosition >= elementScrollTop) {
+		element.classList.add("fade-in-bottom");
+	}
+}
+
+function InitAllFadeInBottomAnimations() {
+	InitFadeInBottomAnimationForElement("InformationContentContainerId");
+	InitFadeInBottomAnimationForElement("AboutMeContentContainerId");
+	InitFadeInBottomAnimationForElement("EmailMeContentContainerId");
+	InitFadeInBottomAnimationForElement("PortfolioContainerId");
+}
+
+function SetOpacityToZeroForAllAnimationElements() {
+	SetOpacityToZeroForElement("InformationContentContainerId");
+	SetOpacityToZeroForElement("AboutMeContentContainerId");
+	SetOpacityToZeroForElement("EmailMeContentContainerId");
+	SetOpacityToZeroForElement("PortfolioContainerId");
+}
+
+function SetOpacityToZeroForElement(elementId) {
+	var element = document.getElementById(elementId);
+	element.style.opacity = 0;
+}
+
+$(window).scroll(function () {
+	InitAllFadeInBottomAnimations();
+});

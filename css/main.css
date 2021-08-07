@@ -6,6 +6,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+i {
+	color: #415a77
+}
+
 .custom-card-row {
 	display: flex;
 	flex-wrap: wrap;
@@ -228,6 +232,7 @@ html {
 	background-color: #f5f5f5;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
+	padding-top: 90px;
 }
 
 .information-icon {
@@ -320,6 +325,24 @@ html {
 	resize: vertical;
 }
 
+/* Animations */
+
+.fade-in-bottom {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-name: fadeInBottom
+}
+
+@keyframes fadeInBottom {
+	from {
+		opacity: 0;
+		transform: translateY(25%);
+	}
+	to {
+		opacity: 1
+	}
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 996px) {
@@ -340,6 +363,7 @@ html {
 	}
 	.information-parent-container-default {
 		text-align: center;
+		padding-top: 48px;
 	}
 	.information-container {
 		flex-direction: column;
