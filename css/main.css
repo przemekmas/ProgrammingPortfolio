@@ -95,6 +95,10 @@ i {
 	width: 0;
 }
 
+.custom-navigation-link {
+	cursor: pointer;
+}
+
 .custom-hyperlink {
 	color: inherit;
 	cursor: pointer;

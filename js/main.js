@@ -89,6 +89,11 @@ function SetOpacityToZeroForElement(elementId) {
 	element.style.opacity = 0;
 }
 
+function GoToElement(elementId) {
+	var elementOffsetTop = document.getElementById(elementId).offsetTop;
+	$(window).scrollTop(elementOffsetTop);
+}
+
 $(window).scroll(function () {
 	InitAllFadeInBottomAnimations();
 });
