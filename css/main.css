@@ -1,13 +1,11 @@
 body {
 	background-color: #c7c7c7;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
 }
 
 html {
 	scroll-behavior: smooth;
-}
-
-i {
-	color: #415a77
 }
 
 .custom-card-row {
@@ -25,6 +23,7 @@ i {
 	border: 0px;
 	border-radius: 0px;
 	margin-bottom: 0px;
+	box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
 }
 
 .navigation-bar-child {
@@ -46,6 +45,11 @@ i {
 
 .main-title {
 	text-transform: uppercase;
+	transition: text-shadow 0.5s;
+}
+
+.main-title:hover {
+	text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
 }
 
 .custom-content {
@@ -200,22 +204,29 @@ i {
 	display: flex;
 }
 
+.parent-information-container {
+	margin-bottom: 5px;
+}
+
 .information-container {
-	display: flex;
+	display: inline-flex;
 	flex-direction: row;
 	align-items: center;
-	margin-bottom: 5px;
 }
 
 .information-container p {
 	margin: 0px;
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
-.information-container i {
+.information-email-icon {
 	font-size: 22px;
-	width: 22px;
-	text-align: center;
+	width: 25px;
+}
+
+.information-phone-icon {
+	font-size: 25.5px;
+	width: 25px;
 }
 
 .information-detail-container h1 {
@@ -278,6 +289,7 @@ i {
 	color: #333;
 	background-color: transparent;
 	border: none;
+	transition: color 0.5s;
 }
 
 .start-button:hover {
@@ -356,9 +368,6 @@ i {
 	.footer-right-container {
 		text-align: center;
 	}
-	.information-container {
-		flex-wrap: wrap;
-	}
 	.information-content-right {
 		margin-left: 0px;
 	}
@@ -369,15 +378,13 @@ i {
 		text-align: center;
 		padding-top: 48px;
 	}
-	.information-container {
-		flex-direction: column;
-	}
 }
 
 /* Override Bootstrap */
 
 .navbar-default .navbar-nav>li>a {
 	color: white;
+	transition: background-color 0.5s;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
