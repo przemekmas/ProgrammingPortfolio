@@ -15,7 +15,6 @@ html {
 
 .custom-card-column {
 	display: flex;
-	flex: auto;
 }
 
 .navigation-bar {
@@ -341,6 +340,22 @@ html {
 	resize: vertical;
 }
 
+/* Other */
+
+.custom-label {
+	background-color: #474747;
+	display: inline;
+	padding: .2em .6em .3em;
+	font-size: 75%;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+}
+
 /* Animations */
 
 .fade-in-bottom {
@@ -377,6 +392,12 @@ html {
 	.information-parent-container-default {
 		text-align: center;
 		padding-top: 48px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.custom-card-column {
+		flex: auto;
 	}
 }
 
