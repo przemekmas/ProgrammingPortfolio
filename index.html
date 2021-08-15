@@ -18,6 +18,11 @@
 </head>
 
 <body>
+	<div id="SplashContainerId" class="splash-container">
+		<div class="loader">
+		</div>
+	</div>
+
 	<nav class="navigation-bar navbar navbar-default">
 		<div class="container">
 			<div class="navbar-header">
@@ -555,5 +560,8 @@
 <script type="text/javascript">
 	InitNavigationBarToggle();
 	SetOpacityToZeroForAllAnimationElements();
-	InitAllFadeInBottomAnimations();
+
+	$(window).on("load", function () {
+		InitPageLoad();
+	});
 </script>

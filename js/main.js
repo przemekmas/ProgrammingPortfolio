@@ -94,6 +94,13 @@ function GoToElement(elementId) {
 	$(window).scrollTop(elementOffsetTop);
 }
 
+function InitPageLoad() {
+	$("#SplashContainerId").fadeOut();
+	setTimeout(function () {
+		InitAllFadeInBottomAnimations();
+	}, 100);
+}
+
 $(window).scroll(function () {
 	InitAllFadeInBottomAnimations();
 });
