@@ -95,7 +95,7 @@ function GoToElement(elementId) {
 }
 
 function InitPageLoad() {
-	$("#SplashContainerId").fadeOut();
+	$("#SplashContainerId").fadeOut("slow");
 	setTimeout(function () {
 		InitAllFadeInBottomAnimations();
 	}, 100);
