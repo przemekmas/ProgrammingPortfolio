@@ -62,8 +62,8 @@ function OnNavigationBarShow(animateOpacity) {
 function InitFadeInBottomAnimationForElement(elementId) {
 	var element = document.getElementById(elementId);
 
-	var elementScrollTop = element.offsetTop - element.offsetHeight;
-	var currentPosition = document.documentElement.scrollTop;
+	var elementScrollTop = element.offsetTop;
+	var currentPosition = document.documentElement.scrollTop + $(window).height();
 
 	if (currentPosition >= elementScrollTop) {
 		element.classList.add("fade-in-bottom");
