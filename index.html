@@ -52,6 +52,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="index.html">Home</a></li>
 					<li><a class="custom-navigation-link" onclick="GoToElement('AboutMeContainerId')">About</a></li>
+					<li><a class="custom-navigation-link" onclick="GoToElement('WorkExperienceContainerId')">Work Experience</a></li>
 					<li><a class="custom-navigation-link" onclick="GoToElement('EmailMeContainerId')">Contact</a></li>
 					<li><a class="custom-navigation-link" onclick="GoToElement('PortfolioContainerId')">Portfolio</a>
 					</li>
@@ -60,7 +61,7 @@
 		</div>
 	</nav>
 
-	<div class="jumbotron information-parent-container-default">
+	<div class="jumbotron information-parent-container-default first-information-parent-container">
 		<div class="container">
 			<div id="InformationContentContainerId" class="row">
 				<div class="col-md-4 information-parent-image-container">
@@ -132,8 +133,8 @@
 				</div>
 
 				<div class="col-md-12 start-button-parent-container">
-					<button class="start-button" aria-label="Go To Email Me"
-						onclick="GoToElement('EmailMeContainerId')">
+					<button class="start-button" aria-label="Go To Work Experience"
+						onclick="GoToElement('WorkExperienceContainerId')">
 						<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 					</button>
 				</div>
@@ -148,7 +149,88 @@
 		</div>
 	</div>
 
-	<div id="EmailMeContainerId" class="jumbotron information-parent-container-default">
+	<div id="WorkExperienceContainerId" class="jumbotron information-parent-container-default">
+		<div class="container">
+			<div id="WorkExperienceContentContainerId" class="row">
+				<div class="col-md-4 information-parent-image-container">
+					<i class="fa fa-briefcase information-icon" aria-hidden="true"></i>
+				</div>
+
+				<div class="col-md-8 information-detail-container">
+					<h1>Work Experience</h1>
+					<br>
+					<div class="col-md-12">
+						<div class="work-exp-card">
+							<img class="work-exp-image" src="images/InvarSystems.png">
+
+							<div class="work-exp-content">
+								<h1 class="work-exp-h1">Invar Systems</h1>
+								<h2 class="work-exp-h2">Software Developer</h2>
+								<h3 class="work-exp-h3">August 2017 - April 2021</h3>
+								<p class="work-exp-p">Software Developer with over three years of commercial experience
+									in
+									development, testing, and deployment of software systems for large companies across
+									the
+									UK and Europe.</p>
+								<span class="work-exp-label">WPF</span>
+								<span class="work-exp-label">C#</span>
+								<span class="work-exp-label">TSQL</span>
+								<span class="work-exp-label">SSRS</span>
+								<span class="work-exp-label">Elastic Search</span>
+								<span class="work-exp-label">Kibana</span>
+								<span class="work-exp-label">Azure DevOps</span>
+								<span class="work-exp-label">Git</span>
+								<span class="work-exp-label">Freshdesk</span>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-12">
+						<div class="work-exp-card">
+							<img class="work-exp-image" src="images/AdamHTT.gif">
+
+							<div class="work-exp-content">
+								<h1 class="work-exp-h1">Adam HTT</h1>
+								<h2 class="work-exp-h2">Software Engineer</h2>
+								<h3 class="work-exp-h3">April 2021 - Present</h3>
+								<p class="work-exp-p">Software Engineer working on a web based application that is used
+									by councils across
+									the
+									UK.</p>
+								<span class="work-exp-label">C#</span>
+								<span class="work-exp-label">TSQL</span>
+								<span class="work-exp-label">JavaScript</span>
+								<span class="work-exp-label">JQuery</span>
+								<span class="work-exp-label">AJAX</span>
+								<span class="work-exp-label">HTML</span>
+								<span class="work-exp-label">CSS</span>
+								<span class="work-exp-label">NetQuarry</span>
+								<span class="work-exp-label">Target Process</span>
+								<span class="work-exp-label">Freshdesk</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-12 start-button-parent-container">
+					<button class="start-button" aria-label="Go To Email Me"
+						onclick="GoToElement('EmailMeContainerId')">
+						<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="information-wave-parent-container">
+			<svg viewBox="0 0 500 150" preserveAspectRatio="none" class="information-wave-container">
+				<path d="M-0.27,37.98 C262.13,216.61 312.36,-24.17 504.79,48.84 L503.67,151.47 L0.00,150.00 Z"
+					class="information-wave-path-default"></path>
+			</svg>
+		</div>
+	</div>
+
+	<div id="EmailMeContainerId" class="jumbotron information-parent-container-primary">
 		<div class="container">
 			<div id="EmailMeContentContainerId" class="row">
 				<div class="col-md-4 information-parent-image-container">
@@ -184,7 +266,7 @@
 		<div class="information-wave-parent-container">
 			<svg viewBox="0 0 500 150" preserveAspectRatio="none" class="information-wave-container">
 				<path d="M-0.27,37.98 C262.13,216.61 312.36,-24.17 504.79,48.84 L503.67,151.47 L0.00,150.00 Z"
-					class="information-wave-path-default"></path>
+					class="information-wave-path-primary"></path>
 			</svg>
 		</div>
 	</div>
@@ -541,6 +623,9 @@
 						</li>
 						<li>
 							<a class="custom-navigation-link" onclick="GoToElement('AboutMeContainerId')">About</a>
+						</li>
+						<li>
+							<a class="custom-navigation-link" onclick="GoToElement('WorkExperienceContainerId')">Work Experience</a>
 						</li>
 						<li>
 							<a class="custom-navigation-link" onclick="GoToElement('EmailMeContainerId')">Contact</a>

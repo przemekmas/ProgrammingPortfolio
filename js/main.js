@@ -62,8 +62,9 @@ function OnNavigationBarShow(animateOpacity) {
 function InitFadeInBottomAnimationForElement(elementId) {
 	var element = document.getElementById(elementId);
 
+	var heightTolerance = 200;
 	var elementScrollTop = element.offsetTop;
-	var currentPosition = document.documentElement.scrollTop + $(window).height();
+	var currentPosition = (document.documentElement.scrollTop + $(window).height()) - heightTolerance;
 
 	if (currentPosition >= elementScrollTop) {
 		element.classList.add("fade-in-bottom");
@@ -73,6 +74,7 @@ function InitFadeInBottomAnimationForElement(elementId) {
 function InitAllFadeInBottomAnimations() {
 	InitFadeInBottomAnimationForElement("InformationContentContainerId");
 	InitFadeInBottomAnimationForElement("AboutMeContentContainerId");
+	InitFadeInBottomAnimationForElement("WorkExperienceContentContainerId");	
 	InitFadeInBottomAnimationForElement("EmailMeContentContainerId");
 	InitFadeInBottomAnimationForElement("PortfolioContainerId");
 }
@@ -80,6 +82,7 @@ function InitAllFadeInBottomAnimations() {
 function SetOpacityToZeroForAllAnimationElements() {
 	SetOpacityToZeroForElement("InformationContentContainerId");
 	SetOpacityToZeroForElement("AboutMeContentContainerId");
+	SetOpacityToZeroForElement("WorkExperienceContentContainerId");
 	SetOpacityToZeroForElement("EmailMeContentContainerId");
 	SetOpacityToZeroForElement("PortfolioContainerId");
 }

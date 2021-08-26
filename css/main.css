@@ -1,5 +1,5 @@
 body {
-	background-color: #c7c7c7;
+	background-color: #f5f5f5;
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 600;
 }
@@ -242,11 +242,14 @@ html {
 	margin-bottom: 0px;
 }
 
+.first-information-parent-container {
+	padding-top: 90px;
+}
+
 .information-parent-container-default {
 	background-color: #f5f5f5;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
-	padding-top: 90px;
 }
 
 .information-icon {
@@ -342,6 +345,69 @@ html {
 
 /* Other */
 
+.work-exp-card {
+	border: 1px solid gray;
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+	display: flex;
+}
+
+.work-exp-label {
+	background-color: #474747;
+	display: inline-block;
+	padding: .2em .6em .3em;
+	margin-top: 5px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 5px;
+}
+
+.work-exp-span {
+	display: block;
+	margin-left: 5px;
+}
+
+.work-exp-image {
+	width: 125px;
+	height: 125px;
+	object-fit: contain;
+}
+
+.work-exp-content {
+	text-align: left;
+	padding-left: 15px;
+}
+
+.work-exp-p {
+	font-size: 18px !important;
+	color: black;
+}
+
+.work-exp-h1 {
+	font-size: 26px !important;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: black;
+}
+
+.work-exp-h2 {
+	font-size: 22px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+.work-exp-h3 {
+	font-size: 18px;
+	margin-top: 0px;
+}
+
 .custom-label {
 	background-color: #474747;
 	display: inline;
@@ -430,7 +496,15 @@ html {
 	}
 	.information-parent-container-default {
 		text-align: center;
+	}
+	.first-information-parent-container {
 		padding-top: 48px;
+	}
+	.footer-navigation-buttons li {
+		float: none;
+	}
+	.footer-navigation-buttons li:first-child a {
+		padding-left: 15px;
 	}
 }
 
