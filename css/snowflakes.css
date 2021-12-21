@@ -65,6 +65,16 @@
 	}
 }
 
+@keyframes snowflakes-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 .snowflake {
 	position: fixed;
 	top: -10%;
@@ -73,12 +83,12 @@
 	-ms-user-select: none;
 	user-select: none;
 	cursor: default;
-	-webkit-animation-name: snowflakes-fall, snowflakes-shake, snowflakes-fade;
+	-webkit-animation-name: snowflakes-fall, snowflakes-shake, snowflakes-fade, snowflakes-rotate;
 	-webkit-animation-duration: 6s, 4s, 6s;
 	-webkit-animation-timing-function: linear, ease-in-out;
 	-webkit-animation-iteration-count: infinite, infinite;
 	-webkit-animation-play-state: running, running;
-	animation-name: snowflakes-fall, snowflakes-shake, snowflakes-fade;
+	animation-name: snowflakes-fall, snowflakes-shake, snowflakes-fade, snowflakes-rotate;
 	animation-duration: 6s, 4s, 6s;
 	animation-timing-function: linear, ease-in-out;
 	animation-iteration-count: infinite, infinite;
