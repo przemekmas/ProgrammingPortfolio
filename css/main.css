@@ -89,6 +89,10 @@ html {
 	margin-left: 5px;
 }
 
+.custom-card-info-span a {
+	text-decoration: none;
+}
+
 .custom-card-info-table {
 	table-layout: fixed;
 	margin-block-start: auto;
@@ -112,7 +116,7 @@ html {
 	color: #474747;
 }
 
-.custom-hyperlink:hover {
+.custom-hyperlink:hover, .custom-hyperlink:focus, .custom-hyperlink:active {
 	color: inherit;
 	text-decoration: none;
 }

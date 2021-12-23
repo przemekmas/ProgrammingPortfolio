@@ -19,7 +19,6 @@ function startSnowflakeAnimation() {
 	for (var i = 0; i <= snowflakeCount; i++) {
 		delays.push(delayInc);
 		delayInc += calculatedDelay;
-		console.log(delayInc);
 	}
 
 	for (var i = 0; i <= snowflakeCount; i++) {
