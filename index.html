@@ -106,12 +106,18 @@
 			</div>
 		</div>
 
-		<div class="information-wave-parent-container">
-			<svg viewBox="0 0 500 150" preserveAspectRatio="none" class="information-wave-container">
-				<path d="M-0.27,37.98 C262.13,216.61 312.36,-24.17 504.79,48.84 L503.67,151.47 L0.00,150.00 Z"
-					class="information-wave-path-default"></path>
-			</svg>
-		</div>
+		<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+			<defs>
+				<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+			</defs>
+			<g class="parallax">
+				<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(165,165,165,0.3)" />
+				<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(165,165,165,0.5)" />
+				<use xlink:href="#gentle-wave" x="48" y="4" fill="rgba(165,165,165,0.7)" />
+				<use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(199,199,199,1)" />
+			</g>
+		</svg>
 	</div>
 
 	<div id="AboutMeContainerId" class="jumbotron information-parent-container-primary">
@@ -650,7 +656,7 @@
 
 				<div class="col-md-6 footer-left-container">
 					<i class="fa fa-copyright"></i>
-					<p class="footer-paragraph">2021 Przemyslaw Maslowski</p>
+					<p class="footer-paragraph">2022 Przemyslaw Maslowski</p>
 				</div>
 				<div class="col-md-6 footer-right-container">
 					<p>Programming Portfolio</p>

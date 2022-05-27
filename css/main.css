@@ -18,7 +18,7 @@ html {
 }
 
 .navigation-bar {
-	background-color: #415a77;
+	background-color: #343434;
 	border: 0px;
 	border-radius: 0px;
 	margin-bottom: 0px;
@@ -128,10 +128,9 @@ html {
 }
 
 /* Footer */
-
 .footer {
 	width: 100%;
-	background-color: #415a77;
+	background-color: #343434;
 	color: white;
 	padding: 10px;
 }
@@ -451,6 +450,7 @@ html {
 	0% {
 		-webkit-transform: rotate(0deg);
 	}
+
 	100% {
 		-webkit-transform: rotate(360deg);
 	}
@@ -460,6 +460,7 @@ html {
 	0% {
 		transform: rotate(0deg);
 	}
+
 	100% {
 		transform: rotate(360deg);
 	}
@@ -478,6 +479,7 @@ html {
 		opacity: 0;
 		transform: translateY(25%);
 	}
+
 	to {
 		opacity: 1
 	}
@@ -489,24 +491,31 @@ html {
 	.footer-left-container {
 		text-align: center;
 	}
+
 	.footer-right-container {
 		text-align: center;
 	}
+
 	.information-content-right {
 		margin-left: 0px;
 	}
+
 	.information-parent-container-primary {
 		text-align: center;
 	}
+
 	.information-parent-container-default {
 		text-align: center;
 	}
+
 	.first-information-parent-container {
 		padding-top: 48px;
 	}
+
 	.footer-navigation-buttons li {
 		float: none;
 	}
+
 	.footer-navigation-buttons li:first-child a {
 		padding-left: 15px;
 	}
@@ -519,15 +528,15 @@ html {
 }
 
 /* Override Bootstrap */
-
 .navbar-default .navbar-nav>li>a {
 	color: white;
 	transition: background-color 0.5s;
+	text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-	color: white;
-	background-color: #778da9;
+	color: black;
+	background-color: #aeaeae;
 }
 
 .navbar-default .navbar-brand {
@@ -555,4 +564,54 @@ html {
 .row {
 	margin-left: -5px;
 	margin-right: -5px;
+}
+
+.parallax>use {
+	animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+	animation-delay: -2s;
+	animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+	animation-delay: -3s;
+	animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+	animation-delay: -4s;
+	animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+	animation-delay: -5s;
+	animation-duration: 20s;
+}
+
+@keyframes move-forever {
+	0% {
+		transform: translate3d(-90px, 0, 0);
+	}
+
+	100% {
+		transform: translate3d(85px, 0, 0);
+	}
+}
+
+.waves {
+	position: relative;
+	width: 100%;
+	height: 15vh;
+	margin-bottom: -7px;
+	min-height: 100px;
+	max-height: 150px;
+}
+
+@media (max-width: 768px) {
+	.waves {
+		height: 40px;
+		min-height: 40px;
+	}
 }
